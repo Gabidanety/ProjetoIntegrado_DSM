@@ -1,0 +1,21 @@
+/* AQUI A O STYLES DA TELA RPINCIPAL, HEADER E FOOTER */
+
+/*
+Cores: 
+
+#00145A - azul escuro
+#2573D9 - azul normal
+#F0F9FF - branco
+#686461 - cinza
+#F2E7DC - branco bege
+*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial,sans-serif';
+}
+.div_container{
+    width: 100%;
+    background-color: #F2E7DC;
+    height: 100%;
+}
