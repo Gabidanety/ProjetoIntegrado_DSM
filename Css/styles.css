@@ -9,46 +9,232 @@ Cores:
 #686461 - cinza
 #F2E7DC - branco bege
 */
+
+/* Variáveis de cores */
+:root {
+    --azul-escuro: #00145A;
+    --azul-normal: #2573D9;
+    --branco: #F0F9FF;
+    --cinza: #686461;
+    --branco-bege: #F2E7DC;
+}
+
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Arial,sans-serif';
+    font-family: century gothic;
     overflow-x: hidden;
     max-width: 100vw;
 }
 .div_container{
     width: 100%;
-    background-color: #F2E7DC;
+    background-color: var(--cinza);
     height: 100%;
 }
 
+/* HEADER */
+ 
 header{
     width: 100%;
-    height: 10vh;
-    background-color: #00145A;
+    height: 20%;
+    background-color: var(--azul-escuro);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0.5%;
+
 }
+.div-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    width: 20%;
+
+}
+
+.div-logo img{
+    width: 80%;
+    height: 100%;
+    margin-left: 30%;
+}
+
+/* NAVE */
 nav{
     display: flex;
     gap: 20px;
-    width: 100%;
+    width: 70%;
     justify-content: center;
     align-items: center;
     height: 10%;
-}
-nav a{
-    text-decoration: none;
-    color: #F0F9FF;
-    font-size: 1.2rem;
-}
-nav a:hover{
-    color: #2573D9;
 }
 nav ul{
     list-style: none;
     display: flex;
     gap: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+nav a:hover{
+    color: var(--azul-normal);
+    transition: 0.3s;
+    font-weight: 900;
+}
+
+
+/* botao login */
+
+.div-login {
+    width: 10%;
+    margin-left: auto; /* Empurra o botão para o canto direito */
+    display: flex;
+}
+
+.div-login a {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.div-login a:hover {
+    color: var(--azul-normal);
+    transition: 0.3s;
+    font-weight: 900;
+}
+
+/* CAMPO BUSCA */
+
+.search-container {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    background-color: var(--branco-bege);
+    padding: 3%;
+}
+
+.div-titulo{
+   width: 100%;
+    height: 60%;
+    text-align: center;
+    justify-content: center;
+    
+
+}
+
+.div-titulo h1{
+    font-size: 3.0rem;
+    color: var(--azul-escuro);
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+
+.div-titulo p{
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 800;
+    margin-top: 0;
+}
+
+.div-search{
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.div-search input[type="text"] {
+    width: 60%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid var(--branco);
+    border-radius: 2.0rem;
+    font-size: 1.0rem;
+    background-color: var(--azul-normal); 
+}
+
+.div-search input[type="text"]::placeholder {
+    color: var(--branco); 
+    font-weight: 600;
+}
+/* 
+CAMPO CATEGORIA E CURSOS */
+
+.div-curso-cat{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--azul-escuro);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Categorias */
+.div-categoria{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: violet;
+    gap: 20px;
+}
+
+.div-categoria ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.div-categoria a{
+    text-decoration: none;
+
+}
+
+
+/*  Cursos */
+.div-cursos{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(105, 3, 105);
+    gap: 20px;
+}
+
+
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 10%;
+    background-color: var(--branco-bege);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--azul-escuro);
+    font-size: 1.0rem;
+    font-weight: 300;
 }
