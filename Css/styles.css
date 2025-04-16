@@ -28,7 +28,7 @@ body{
 }
 .div_container{
     width: 100%;
-    background-color: var(--cinza);
+    background-color: var(--azul-escuro);
     height: 100%;
 }
 
@@ -175,17 +175,17 @@ CAMPO CATEGORIA E CURSOS */
     justify-content: center;
     background-color: var(--azul-escuro);
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 1%;
 }
 
 /* Categorias */
 .div-categoria{
-    width: 30%;
+    width: 40%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: violet;
+    background-color: var(--azul-escuro);
     gap: 20px;
 }
 
@@ -195,24 +195,105 @@ CAMPO CATEGORIA E CURSOS */
     flex-direction: column;
     gap: 20px;
     text-align: center;
+    width: 40%;
+    height: 100%;
+}
+
+.div-categoria ul li {
+    border: 1px solid var(--azul-normal); 
+    padding: 10px; 
+    border-radius: 2.0rem; 
+    text-align: center; 
+    width: 100%; 
+    background-color: transparent;
 }
 
 .div-categoria a{
     text-decoration: none;
-
+   color: var(--branco);
+    font-size: 1.0rem;
+    font-weight: 500;
+    text-transform: lowercase;
+    
 }
+.div-categoria ul li:hover {
+    background-color: var(--azul-normal); 
+    transition: 0.3s; 
+}
+
+
 
 
 /*  Cursos */
-.div-cursos{
-    width: 70%;
+.div-acesso{
+    width: 60%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgb(105, 3, 105);
     gap: 20px;
 }
+.div-subTitle {
+    width: 100%;
+    height: 30%;
+    background-color: orange;
+    display: flex;
+    flex-direction: column; /* Coloca os elementos um embaixo do outro */
+    justify-content: center; /* Alinha no centro verticalmente */
+    align-items: flex-end; /* Alinha à direita */
+}
+
+.div-subTitle h2{
+    font-size: 3.3rem;
+    color: var(--branco);
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 5%;
+}
+
+.div-subTitle p{
+    color: var(--branco);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 5%;
+}
+
+.div-subTitle hr{
+    width: 80%;
+    height: 1px;
+    background-color: var(--branco);
+    border: none;
+    margin-left: 15%;
+
+}
+
+/* Cursos */
+.div-cursos{
+    width: 100%;
+    height: 70%;
+    background-color: red;
+}
+.linha-curso{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.curso img{
+    width: 50%;
+    height: 100%;
+}
+.curso img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    background-color: var(--branco);
+    opacity: 0.8;
+}
+
+
 
 
 
