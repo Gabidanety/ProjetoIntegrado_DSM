@@ -147,7 +147,7 @@ nav a:hover{
     height: 60%;
     text-align: center;
     justify-content: center;
-    margin-top: 4%;
+    padding-top: 4%;
 }
 
 .div-search input[type="text"] {
@@ -228,13 +228,13 @@ CAMPO CATEGORIA E CURSOS */
 .div-acesso{
     width: 60%;
     height: 100%;
-    background-color: rgb(105, 3, 105);
+    background-color: transparent;
     gap: 20px;
 }
 .div-subTitle {
     width: 100%;
     height: 30%;
-    background-color: orange;
+    background-color: transparent;
     display: flex;
     flex-direction: column; /* Coloca os elementos um embaixo do outro */
     justify-content: center; /* Alinha no centro verticalmente */
@@ -263,7 +263,7 @@ CAMPO CATEGORIA E CURSOS */
     height: 1px;
     background-color: var(--branco);
     border: none;
-    margin-left: 15%;
+    padding-left: 10%;
 
 }
 
@@ -271,8 +271,10 @@ CAMPO CATEGORIA E CURSOS */
 .div-cursos{
     width: 100%;
     height: 70%;
-    background-color: red;
+    background-color: transparent;
 }
+
+
 .linha-curso{
     width: 100%;
     height: 30%;
@@ -280,11 +282,18 @@ CAMPO CATEGORIA E CURSOS */
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-top: 2%;
+
 }
+
 
 .curso img{
     width: 50%;
     height: 100%;
+}
+.curso a{
+    text-decoration: none;
+    text-transform: lowercase;
 }
 .curso img:hover{
     transform: scale(1.05);
@@ -294,7 +303,17 @@ CAMPO CATEGORIA E CURSOS */
 }
 
 
+.curso h4{
+    color: var(--branco); /* Define a cor branca */
+    margin: 0 auto; /* Centraliza verticalmente dentro do container */
+    display: block; /* Garante que o elemento ocupe toda a largura disponível */
+    text-align: end;
+    width: 50%;
+    padding-bottom: 1%;
+    font-size: 1.3rem;
+    text-transform: capitalize;
 
+}
 
 
 /* FOOTER */
