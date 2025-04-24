@@ -336,7 +336,7 @@
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="1193" ColName="USUARIO_USU_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1351" ColName="USU_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
 <OPTIONSELECT Value="0" />
@@ -379,12 +379,12 @@
 </INDEX>
 <INDEX ID="1153" IndexName="tbFeedback_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1151">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1193" LengthParam="0" />
+<INDEXCOLUMN idColumn="1351" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1022" Tablename="CATEGORIA" PrevTableName="Table_04" XPos="1842" YPos="559" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="5" >
+<TABLE ID="1022" Tablename="CATEGORIA" PrevTableName="Table_04" XPos="1691" YPos="530" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="5" >
 <COLUMNS>
 <COLUMN ID="1024" ColName="CAT_INT_ID" PrevColName="idCategoria" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
@@ -413,21 +413,15 @@
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1028" Tablename="AREACATEGORIA" PrevTableName="Table_05" XPos="1788" YPos="300" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="6" >
+<TABLE ID="1028" Tablename="AREACATEGORIA" PrevTableName="Table_05" XPos="1806" YPos="294" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="6" >
 <COLUMNS>
-<COLUMN ID="1030" ColName="ACA" PrevColName="idAreaConhecimetno" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<COLUMN ID="1030" ColName="ACA_INT_ID" PrevColName="idAreaConhecimetno" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="1204" ColName="CATEGORIA_CAT_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
-<OPTIONSELECTED>
-<OPTIONSELECT Value="1" />
-<OPTIONSELECT Value="0" />
-</OPTIONSELECTED>
-</COLUMN>
-<COLUMN ID="1199" ColName="AREACONHECIMENTO_ARE_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1349" ColName="CAT_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
 <OPTIONSELECT Value="0" />
@@ -450,7 +444,6 @@
 </RELATIONS_START>
 <RELATIONS_END>
 <RELATION_END ID="1105" />
-<RELATION_END ID="1108" />
 </RELATIONS_END>
 <INDICES>
 <INDEX ID="1031" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
@@ -460,37 +453,7 @@
 </INDEX>
 <INDEX ID="1107" IndexName="tbAreaCategoria_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1105">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1204" LengthParam="0" />
-</INDEXCOLUMNS>
-</INDEX>
-<INDEX ID="1110" IndexName="tbAreaCategoria_FKIndex2" IndexKind="1" FKRefDef_Obj_id="1108">
-<INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1199" LengthParam="0" />
-</INDEXCOLUMNS>
-</INDEX>
-</INDICES>
-</TABLE>
-<TABLE ID="1036" Tablename="AREACONHECIMENTO" PrevTableName="Table_06" XPos="1850" YPos="109" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="7" >
-<COLUMNS>
-<COLUMN ID="1038" ColName="ARE_INT_ID" PrevColName="idAreaConhecimento" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
-<OPTIONSELECTED>
-<OPTIONSELECT Value="1" />
-<OPTIONSELECT Value="0" />
-</OPTIONSELECTED>
-</COLUMN>
-<COLUMN ID="1040" ColName="ARE_STR_DESC" PrevColName="descAreaConhecimetno" Pos="1" idDatatype="20" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
-<OPTIONSELECTED>
-<OPTIONSELECT Value="0" />
-</OPTIONSELECTED>
-</COLUMN>
-</COLUMNS>
-<RELATIONS_START>
-<RELATION_START ID="1108" />
-</RELATIONS_START>
-<INDICES>
-<INDEX ID="1039" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
-<INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1038" LengthParam="0" />
+<INDEXCOLUMN idColumn="1349" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 </INDICES>
@@ -554,25 +517,25 @@
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="1201" ColName="AREACATEGORIA_ACA" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1357" ColName="PLC_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="1194" ColName="USUARIO_USU_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1355" ColName="USU_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="1178" ColName="PLATAFORMA_Curso_PLC_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1354" ColName="CUR_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="1177" ColName="CURSO_CUR_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1353" ColName="ACA_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
 <OPTIONSELECT Value="0" />
@@ -602,22 +565,22 @@
 </INDEX>
 <INDEX ID="1136" IndexName="tbHistoricoUsuario_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1134">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1194" LengthParam="0" />
+<INDEXCOLUMN idColumn="1355" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 <INDEX ID="1145" IndexName="tbHistoricoUsuario_FKIndex3" IndexKind="1" FKRefDef_Obj_id="1143">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1201" LengthParam="0" />
+<INDEXCOLUMN idColumn="1353" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 <INDEX ID="1161" IndexName="tbHistoricoUsuario_FKIndex4" IndexKind="1" FKRefDef_Obj_id="1137">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1177" LengthParam="0" />
+<INDEXCOLUMN idColumn="1354" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 <INDEX ID="1206" IndexName="HISTORICOUSUARIO_FKIndex4" IndexKind="1" FKRefDef_Obj_id="1148">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1178" LengthParam="0" />
+<INDEXCOLUMN idColumn="1357" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 </INDICES>
@@ -686,7 +649,7 @@
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="1179" ColName="CURSO_CUR_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1356" ColName="CUR_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
 <OPTIONSELECT Value="0" />
@@ -724,7 +687,7 @@
 </INDEX>
 <INDEX ID="1116" IndexName="tbPlataformaCurso_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1114">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1179" LengthParam="0" />
+<INDEXCOLUMN idColumn="1356" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 <INDEX ID="1119" IndexName="tbPlataformaCurso_FKIndex2" IndexKind="1" FKRefDef_Obj_id="1117">
@@ -742,19 +705,19 @@
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="1180" ColName="CURSO_CUR_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1360" ColName="CUR_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1358" ColName="PLA_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
 <COLUMN ID="1173" ColName="MENTOR_MEN_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
-<OPTIONSELECTED>
-<OPTIONSELECT Value="1" />
-<OPTIONSELECT Value="0" />
-</OPTIONSELECTED>
-</COLUMN>
-<COLUMN ID="1171" ColName="PLATAFORMA_PLA_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
 <OPTIONSELECT Value="0" />
@@ -789,12 +752,12 @@
 </INDEX>
 <INDEX ID="1130" IndexName="tbMentoria_FKIndex2" IndexKind="1" FKRefDef_Obj_id="1128">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1180" LengthParam="0" />
+<INDEXCOLUMN idColumn="1360" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 <INDEX ID="1133" IndexName="tbMentoria_FKIndex3" IndexKind="1" FKRefDef_Obj_id="1131">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1171" LengthParam="0" />
+<INDEXCOLUMN idColumn="1358" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 </INDICES>
@@ -847,7 +810,7 @@
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="1202" ColName="AREACATEGORIA_ACA" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1352" ColName="ACA_INT_ID" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
 <OPTIONSELECT Value="0" />
@@ -908,26 +871,25 @@
 </INDEX>
 <INDEX ID="1113" IndexName="tbCurso_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1111">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1202" LengthParam="0" />
+<INDEXCOLUMN idColumn="1352" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 </INDICES>
 </TABLE>
 </TABLES>
 <RELATIONS>
-<RELATION ID="1105" RelationName="FK_AREACATEGORIA_CATEGORIA_ID" Kind="2" SrcTable="1022" DestTable="1028" FKFields="CAT_INT_ID=CATEGORIA_CAT_INT_ID\n" FKFieldsComments="\n" relDirection="1" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1107" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="16" />
-<RELATION ID="1108" RelationName="FK_AREACATEGORIA_AREACONHECIMENTO_ID" Kind="2" SrcTable="1036" DestTable="1028" FKFields="ARE_INT_ID=AREACONHECIMENTO_ARE_INT_ID\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1110" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="17" />
-<RELATION ID="1111" RelationName="FK_CURSO_AREACATEGORIA_ID" Kind="2" SrcTable="1028" DestTable="1084" FKFields="ACA=AREACATEGORIA_ACA\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1113" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="18" />
-<RELATION ID="1114" RelationName="FK_PLATAFORMACURSO_CURSO_ID" Kind="2" SrcTable="1084" DestTable="1066" FKFields="CUR_INT_ID=CURSO_CUR_INT_ID\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1116" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="19" />
+<RELATION ID="1105" RelationName="FK_AREACATEGORIA_CATEGORIA_ID" Kind="2" SrcTable="1022" DestTable="1028" FKFields="CAT_INT_ID=CAT_INT_ID\n" FKFieldsComments="\n" relDirection="1" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1107" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="16" />
+<RELATION ID="1111" RelationName="FK_CURSO_AREACATEGORIA_ID" Kind="2" SrcTable="1028" DestTable="1084" FKFields="ACA_INT_ID=ACA_INT_ID\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1113" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="18" />
+<RELATION ID="1114" RelationName="FK_PLATAFORMACURSO_CURSO_ID" Kind="2" SrcTable="1084" DestTable="1066" FKFields="CUR_INT_ID=CUR_INT_ID\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1116" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="19" />
 <RELATION ID="1117" RelationName="FK_PLATAFORMA_CURSO_PLATAFROMA_ID" Kind="2" SrcTable="1057" DestTable="1066" FKFields="PLA_INT_ID=PLATAFORMA_PLA_INT_ID\n" FKFieldsComments="\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1119" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="20" />
 <RELATION ID="1125" RelationName="FK_MENTORIA_MENTOR_ID" Kind="2" SrcTable="1076" DestTable="1071" FKFields="MEN_INT_ID=MENTOR_MEN_INT_ID\n" FKFieldsComments="\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1127" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="22" />
-<RELATION ID="1128" RelationName="FK_MENTORIA_CURSO_ID" Kind="2" SrcTable="1084" DestTable="1071" FKFields="CUR_INT_ID=CURSO_CUR_INT_ID\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1130" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="23" />
-<RELATION ID="1131" RelationName="FK_MENTORIA_PLATAFORMA_ID" Kind="2" SrcTable="1057" DestTable="1071" FKFields="PLA_INT_ID=PLATAFORMA_PLA_INT_ID\n" FKFieldsComments="\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="18" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1133" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="24" />
-<RELATION ID="1134" RelationName="FK_HISTORICOUSUARIO_USUARIO_ID" Kind="2" SrcTable="1042" DestTable="1051" FKFields="USU_INT_ID=USUARIO_USU_INT_ID\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="-12" CaptionOffsetY="6" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1136" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="25" />
-<RELATION ID="1137" RelationName="FK_HISTORICOUSUARIO_CURSO_ID" Kind="2" SrcTable="1084" DestTable="1051" FKFields="CUR_INT_ID=CURSO_CUR_INT_ID\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="19" CaptionOffsetY="-10" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1161" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="26" />
-<RELATION ID="1143" RelationName="FK_HISTORICOUSUARIO_AREACATEGORIA_ID" Kind="2" SrcTable="1028" DestTable="1051" FKFields="ACA=AREACATEGORIA_ACA\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1145" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="27" />
-<RELATION ID="1148" RelationName="FK_HISTORICOUSUARIO_PLATAFORMACURSO_ID" Kind="2" SrcTable="1066" DestTable="1051" FKFields="PLC_INT_ID=PLATAFORMA_Curso_PLC_INT_ID\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1206" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="28" />
-<RELATION ID="1151" RelationName="FK_FEEDBACK_USUARIO_ID" Kind="2" SrcTable="1042" DestTable="1014" FKFields="USU_INT_ID=USUARIO_USU_INT_ID\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1153" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="29" />
+<RELATION ID="1128" RelationName="FK_MENTORIA_CURSO_ID" Kind="2" SrcTable="1084" DestTable="1071" FKFields="CUR_INT_ID=CUR_INT_ID\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1130" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="23" />
+<RELATION ID="1131" RelationName="FK_MENTORIA_PLATAFORMA_ID" Kind="2" SrcTable="1057" DestTable="1071" FKFields="PLA_INT_ID=PLA_INT_ID\n" FKFieldsComments="\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="18" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1133" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="24" />
+<RELATION ID="1134" RelationName="FK_HISTORICOUSUARIO_USUARIO_ID" Kind="2" SrcTable="1042" DestTable="1051" FKFields="USU_INT_ID=USU_INT_ID\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="-12" CaptionOffsetY="6" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1136" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="25" />
+<RELATION ID="1137" RelationName="FK_HISTORICOUSUARIO_CURSO_ID" Kind="2" SrcTable="1084" DestTable="1051" FKFields="CUR_INT_ID=CUR_INT_ID\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="19" CaptionOffsetY="-10" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1161" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="26" />
+<RELATION ID="1143" RelationName="FK_HISTORICOUSUARIO_AREACATEGORIA_ID" Kind="2" SrcTable="1028" DestTable="1051" FKFields="ACA_INT_ID=ACA_INT_ID\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1145" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="27" />
+<RELATION ID="1148" RelationName="FK_HISTORICOUSUARIO_PLATAFORMACURSO_ID" Kind="2" SrcTable="1066" DestTable="1051" FKFields="PLC_INT_ID=PLC_INT_ID\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1206" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="28" />
+<RELATION ID="1151" RelationName="FK_FEEDBACK_USUARIO_ID" Kind="2" SrcTable="1042" DestTable="1014" FKFields="USU_INT_ID=USU_INT_ID\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1153" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="29" />
 <RELATION ID="1318" RelationName="FK_ADMINISTRADOR_PLATAFORMA_ID" Kind="2" SrcTable="1000" DestTable="1057" FKFields="ADM_INT_ID=ADM_INT_ID\n" FKFieldsComments="\n" relDirection="1" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1320" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="30" />
 </RELATIONS>
 <NOTES>
