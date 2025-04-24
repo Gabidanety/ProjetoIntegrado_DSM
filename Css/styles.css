@@ -1,14 +1,16 @@
 /* AQUI A O STYLES DA TELA RPINCIPAL, HEADER E FOOTER */
 
-/*
-Cores: 
+@font-face {
+    font-family: bebas;
+    src: url(../fonts/BebasNeue-Regular.otf);
+    src: url(../fonts/BebasNeue-Regular.ttf);
+    font-weight: 700;
+}
 
-#00145A - azul escuro
-#2573D9 - azul normal
-#F0F9FF - branco
-#686461 - cinza
-#F2E7DC - branco bege
-*/
+@font-face {
+    font-family: vietnam;
+    src: url(/fonts/BeVietnamPro-Regular.ttf);
+}
 
 /* Variáveis de cores */
 :root {
@@ -18,12 +20,31 @@ Cores:
     --cinza: #686461;
     --branco-bege: #F2E7DC;
 }
+h1{
+    font-family: bebas;
+}
+h2{
+    font-family: bebas;
+}
+h3{
+    font-family: bebas;
+}
+h4{
+    font-family: bebas;
+}
+a{
+    font-family: vietnam;
+}
+p{
+    font-family: vietnam;
+}
+input{
+    font-family: vietnam;
+}
 
 body{
     margin: 0;
     padding: 0;
-    font-family: century gothic;
-    overflow-x: hidden;
     max-width: 100vw;
 }
 .div_container{
@@ -37,12 +58,13 @@ body{
 header{
     width: 100%;
     height: 20%;
-    background-color: var(--azul-escuro);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5%;
-
+}
+main{
+    background-image: url(/assets/images/fundo_buscaCursos.jpg);
 }
 .div-logo{
     display: flex;
@@ -75,7 +97,7 @@ nav ul{
 }
 nav a{
     text-decoration: none;
-    color: var(--branco);
+    color: var(--branco-bege);
     font-size: 1.2rem;
     font-weight: 800;
 }
@@ -96,7 +118,7 @@ nav a:hover{
 
 .div-login a {
     text-decoration: none;
-    color: var(--branco);
+    color: var(--branco-bege);
     font-size: 1.2rem;
     font-weight: 900;
 }
@@ -137,8 +159,7 @@ nav a:hover{
 
 .div-titulo p{
     font-size: 0.8rem;
-    color: black;
-    font-weight: 800;
+    font-weight: 600;
     margin-top: 0;
 }
 
@@ -154,14 +175,14 @@ nav a:hover{
     width: 60%;
     height: 30px;
     padding: 10px;
-    border: 1px solid var(--branco);
+    border: 1px solid var(--branco-bege);
     border-radius: 2.0rem;
     font-size: 1.0rem;
     background-color: var(--azul-normal); 
 }
 
 .div-search input[type="text"]::placeholder {
-    color: var(--branco); 
+    color: var(--branco-bege); 
     font-weight: 600;
 }
 /* 
@@ -180,13 +201,13 @@ CAMPO CATEGORIA E CURSOS */
 
 /* Categorias */
 .div-categoria{
-    width: 40%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--azul-escuro);
-    gap: 20px;
+    gap: 15px;
 }
 
 .div-categoria ul{
@@ -210,7 +231,7 @@ CAMPO CATEGORIA E CURSOS */
 
 .div-categoria a{
     text-decoration: none;
-   color: var(--branco);
+   color: var(--branco-bege);
     font-size: 1.0rem;
     font-weight: 500;
     text-transform: lowercase;
@@ -243,7 +264,7 @@ CAMPO CATEGORIA E CURSOS */
 
 .div-subTitle h2{
     font-size: 3.3rem;
-    color: var(--branco);
+    color: var(--branco-bege);
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
@@ -251,7 +272,7 @@ CAMPO CATEGORIA E CURSOS */
 }
 
 .div-subTitle p{
-    color: var(--branco);
+    color: var(--branco-bege);
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 0;
@@ -261,7 +282,7 @@ CAMPO CATEGORIA E CURSOS */
 .div-subTitle hr{
     width: 80%;
     height: 1px;
-    background-color: var(--branco);
+    background-color: var(--branco-bege);
     border: none;
     padding-left: 10%;
 
@@ -271,7 +292,6 @@ CAMPO CATEGORIA E CURSOS */
 .div-cursos{
     width: 100%;
     height: 70%;
-    background-color: transparent;
 }
 
 
@@ -290,6 +310,7 @@ CAMPO CATEGORIA E CURSOS */
 .curso img{
     width: 50%;
     height: 100%;
+    padding-right: 20px;
 }
 .curso a{
     text-decoration: none;
@@ -298,23 +319,23 @@ CAMPO CATEGORIA E CURSOS */
 .curso img:hover{
     transform: scale(1.05);
     transition: 0.3s;
-    background-color: var(--branco);
+    background-color: var(--branco-bege);
     opacity: 0.8;
 }
 
 
-.curso h4{
-    color: var(--branco); /* Define a cor branca */
+.curso h3{
+    color: var(--branco-bege);
     margin: 0 auto; /* Centraliza verticalmente dentro do container */
     display: block; /* Garante que o elemento ocupe toda a largura disponível */
     text-align: end;
     width: 50%;
     padding-bottom: 1%;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    padding-right: 15px;
     text-transform: capitalize;
 
 }
-
 
 /* FOOTER */
 footer{
@@ -330,11 +351,10 @@ footer{
 footer ul{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 footer a{
     text-decoration: none;
     color: var(--azul-escuro);
     font-size: 1.0rem;
-    font-weight: 300;
 }
