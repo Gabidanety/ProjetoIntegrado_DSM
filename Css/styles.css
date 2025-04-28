@@ -42,11 +42,13 @@ input{
     font-family: vietnam;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     max-width: 100vw;
+    overflow-x: hidden;
 }
+
 .div_container{
     width: 100%;
     background-color: var(--azul-escuro);
@@ -358,3 +360,6 @@ footer a{
     color: var(--azul-escuro);
     font-size: 1.0rem;
 }
+footer a:hover{
+    color: var(--cinza);
+ }
