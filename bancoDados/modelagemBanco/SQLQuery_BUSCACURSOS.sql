@@ -162,7 +162,7 @@ CREATE TABLE HISTORICOUSUARIO
 
 INSERT INTO USUARIO (USU_STR_NOME, USU_STR_EMAIL, USU_STR_SENHA, USU_STR_INSERCAO, USU_INT_SITUACAO)
 		VALUES ('Bianca Mendes', 'biancamendes5847@hotmail.com', '457TS58E', '14/05/2025 20:53:45:25', 0) 
-			,('Gabrielly Vasconcelos', 'Gabriellyvscls7572@gmail.com', 's5T785Ds', '14/05/2025 20:56:45:75', 0)
+			,('Gabrielly Vasconcelos', 'gabriellyvscls7572@gmail.com', 's5T785Ds', '14/05/2025 20:56:45:75', 0)
 
 INSERT INTO ADMINISTRADOR (ADM_STR_NOME, ADM_STR_CPF, ADM_STR_SENHA, ADM_STR_DATAINSERCAO, ADM_INT_SITUACAO)
 		VALUES ('Lady Gaga', '49847858948', '12344321ABC', '14/05/2025 21:13:22', 0)
@@ -203,17 +203,13 @@ INSERT INTO CURSO (ACA_INT_ID, CUR_STR_TITULO, CUR_STR_URL, CUR_STR_CERTIFICACAO
 			,(1, 'Fundamentos do Python 1', 'https://www.netacad.com/pt/courses/python-essentials-1?courseLang=pt-BR', 'PCEP - Programador Python de nível básico certificado', 30, 'O curso Python Essentials 1 da Cisco oferece uma introdução prática à programação em Python para iniciantes, com exercícios interativos e conceitos básicos. Ao final, o aluno recebe certificado digital. Curso gratuito disponível na Cisco Networking Academy.', '29/05/2025', 'Iniciante', '15/05/2025')
 		
 INSERT INTO PLATAFORMACURSO (CUR_INT_ID, PLA_INT_ID, PLC_STR_DATAINSERCAO, PLC_INT_SITUACAO)
-		VALUES (2, 5, '15/05/2025 12:32', 0)
-			,(3, 5,'15/05/2025 12:32', 0)
-			,(4, 3,'15/05/2025 12:32', 0)
-			,(6, 2,'15/05/2025 12:32', 0)
+		VALUES (1, 1, '15/05/2025 12:32', 0)
 
 INSERT INTO MENTOR (MEN_STR_NOME, MEN_STR_DATAINSERCAO, MEN_INT_SITUACAO)
 		VALUES ('Gustavo Guanabara', '15/05/2025', 0)
 
 INSERT INTO MENTORIA (MEN_INT_ID, CUR_INT_ID, PLA_INT_ID, MET_STR_INSERCAO, MET_INT_SITUACAO)
-		VALUES (1, 7, 7, '26/05/2025 13:00', 0)
-
+		VALUES (1, 1, 1, '26/05/2025 13:00', 0)
 
 			SELECT * FROM USUARIO
 			SELECT * FROM ADMINISTRADOR
