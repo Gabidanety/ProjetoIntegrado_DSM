@@ -296,39 +296,71 @@ CAMPO CATEGORIA E CURSOS */
     align-items: center;
     gap: 20px;
     padding-top: 2%;
+    padding-bottom: 5%;
+
 
 }
+.curso {
+    width: 300px; /* Mesma largura do carrossel */
+    height: 150px; /* Mesma altura do carrossel */
+    position: relative;
+    margin:auto
+}
 
-
-.curso img{
-    width: 50%;
+.curso img {
+    width: 100%;
     height: 100%;
-    padding-right: 20px;
+    object-fit: cover;
 }
 .curso a{
     text-decoration: none;
     text-transform: lowercase;
+     display: block;
+    width: 100%;
+    height: 100%;
 }
 .curso img:hover{
     transform: scale(1.05);
     transition: 0.3s;
     background-color: var(--branco-bege);
     opacity: 0.8;
+    /* border-right: 20px solid var(--branco); */
 }
 
 
 .curso h3{
     color: var(--branco-bege);
-    margin: 0 auto; /* Centraliza verticalmente dentro do container */
-    display: block; /* Garante que o elemento ocupe toda a largura disponível */
+    margin: 0 auto; 
+    display: block;
     text-align: end;
-    width: 50%;
+    width: 100%;
     padding-bottom: 1%;
     font-size: 1.7rem;
     padding-right: 15px;
     text-transform: capitalize;
 
 }
+
+.carrossel-container {
+    width: 300px; /* ajuste conforme necessário */
+    height: 150px; /* ajuste conforme necessário */
+    overflow: hidden;
+    position: relative;
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carrossel img {
+    min-width: 300px; /* largura da imagem */
+    height: 150px; /* altura da imagem */
+    object-fit: cover;
+}
+
+
+
 
 /* FOOTER */
 footer{

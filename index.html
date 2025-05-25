@@ -20,13 +20,13 @@
 
             <nav>
                 <ul>
-                    <li><a href="pages/quemSomos.html">
+                    <li><a href="../pages/quemSomos.html">
                             <h2>QUEM SOMOS</h2>
                         </a></li>
-                    <li><a href="pages/faq.html">
+                    <li><a href="../pages/faq.html">
                             <h2>F.A.Q</h2>
                         </a></li>
-                    <li><a href="pages/apoieProjeto.html">
+                    <li><a href="../pages/apoieProjeto.html">
                             <h2>APOIE O PROJETO</h2>
                         </a></li>
                 </ul>
@@ -101,7 +101,13 @@
                             <div class="curso">
                                 <a href="">
                                     <h3>Recentes</h3>
-                                    <img src="assets/images/fundo_buscaCursos.jpg" alt="">
+                                    <div class="carrossel-container">
+                                        <div class="carrossel">
+                                            <img src="assets/images/imgTest.jpg" alt="">
+                                            <img src="assets/images/imgTest3.jpg" alt="">
+                                            <img src="assets/images/imgTest2.jpg" alt="">
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
 
@@ -152,6 +158,23 @@
         </footer>
     </div>
 
+
+    <script>
+        const carrossel = document.querySelector('.curso .carrossel');
+        let scrollPosition = 0;
+        const itemWidth = 200; // largura da imagem
+        const totalItems = carrossel.children.length;
+
+        function deslizar() {
+            scrollPosition -= 1;
+            if (Math.abs(scrollPosition) >= itemWidth * totalItems) {
+                scrollPosition = 0;
+            }
+            carrossel.style.transform = `translateX(${scrollPosition}px)`;
+        }
+
+        setInterval(deslizar, 20);
+    </script>
 </body>
 
 </html>
