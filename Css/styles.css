@@ -17,7 +17,7 @@
     --azul-escuro: #00145A;
     --azul-normal: #2573D9;
     --branco: #F0F9FF;
-    --cinza: #686461;
+    --cinza: #3d3d3d;
     --branco-bege: #F2E7DC;
 }
 h1, h2, h3, h4{
@@ -54,9 +54,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0.5%;
-}
-main{
-    background-image: url(/assets/images/fundo_buscaCursos.jpg);
 }
 .div-logo{
     display: flex;
@@ -129,7 +126,7 @@ nav a:hover{
 }
 
 .div-titulo{
-   width: 100%;
+    width: 100%;
     height: 60%;
     text-align: center;
     justify-content: center;
@@ -387,8 +384,89 @@ CAMPO CATEGORIA E CURSOS */
     object-fit: cover;
 }
 
-
-
+/* Formulário Apoie o projeto */
+.div-esquerda{
+    width: 40%;
+    height: 450px;
+    text-align: left;
+    margin-top: -1%;
+    background-color: var(--branco-bege);
+}
+.div-esquerda h1{
+    font-size: 4.0rem;
+    color: var(--azul-escuro);
+    font-weight: bold;
+    padding-left: 20%;
+    margin-top: 15px;
+}
+.div-esquerda p{
+    color: var(--cinza);
+    padding-left: 25%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    line-height: 1.5;
+    font-weight: 900;
+}
+.div-direita{
+    width: 60%;
+    height: 100%;
+    text-align: left;
+    margin-top: -1%;
+    background-color: var(--azul-escuro);
+}
+.div-direita h1{
+    font-size: 4.0rem;
+    color: var(--branco-bege);
+    font-weight: bold;
+    padding-left: 5%;
+    margin-top: 15px;
+}
+.main-formulario{
+    display: flex;
+    flex-wrap: wrap;
+}
+.formulario{
+    width: 60%;
+    height: 100%;
+    padding-left: 10%;
+    margin-top: -10px;
+}
+.formulario label{
+    font-family: vietnam;
+    color: var(--branco-bege);
+    font-size: 16px;
+    padding-right: 3px;
+    margin-bottom: 8px;
+}
+.entrada{
+    width: 300px;
+    height: 25px;
+    background-color: var(--branco-bege);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-left: 3px;
+    font-family: vietnam;
+}
+.formulario textarea{
+    width: 400px;
+    margin-bottom: 10px;
+    background-color: var(--branco-bege);
+    font-family: vietnam;
+    margin-top: 5px;
+}
+.botao{
+    font-family: vietnam;
+    color: var(--branco-bege);
+    font-size: 16px;
+    background-color: var(--azul-normal);
+    border-radius: 10px;
+    height: 50px;
+    width: 90px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.botao:hover{
+    background-color: var(--azul-escuro);
+}
 
 /* FOOTER */
 footer{
