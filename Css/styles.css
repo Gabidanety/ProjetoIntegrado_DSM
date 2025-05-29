@@ -60,10 +60,6 @@ main{
 }
 .div-logo{
     display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 20px 20px;
-    width: 20%;
 
 }
 
