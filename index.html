@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuscaCursos | Home</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- <script src="../Js/script.js"></script> -->
 </head>
 
 <body>
@@ -31,7 +33,9 @@
                         </a></li>
                 </ul>
                 <div class="div-login">
-                    <a href=""><h3>LOG IN</h3></a>
+                    <a href="">
+                        <h3>LOG IN</h3>
+                    </a>
                 </div>
             </nav>
         </header>
@@ -99,7 +103,7 @@
                             <!-- Linha 1 -->
 
                             <div class="curso">
-                                <a href="">
+                                <a href="/Pages/curso.html">
                                     <h3>Recentes</h3>
                                     <div class="carrossel-container">
                                         <div class="carrossel">
@@ -112,11 +116,17 @@
                             </div>
 
                             <div class="curso">
-                                <a href="">
+                                <a href="/Pages/curso.html">
                                     <h3>Populares</h3>
-
-                                    <img src="assets/images/fundo_buscaCursos.jpg" alt="">
+                                    <div class="carrossel-container">
+                                        <div class="carrossel">
+                                            <img src="assets/images/imgTest3.jpg" alt="">
+                                            <img src="assets/images/imgTest2.jpg" alt="">
+                                            <img src="assets/images/imgTest.jpg" alt="">
+                                        </div>
+                                    </div>
                                 </a>
+                                <!-- <imgsrc="assets/images/fundo_buscaCursos.jpg"alt="">-->
                             </div>
                         </div>
 
@@ -124,14 +134,14 @@
                         <div class="linha-curso">
 
                             <div class="curso">
-                                <a href="">
+                                <a href="/Pages/curso.html">
                                     <h3> essenciais</h3>
                                     <img src="assets/images/fundo_buscaCursos.jpg" alt="">
                                 </a>
                             </div>
 
                             <div class="curso">
-                                <a href="">
+                                <a href="/Pages/curso.html">
                                     <h3>primeiros passos</h3>
                                     <img src="assets/images/fundo_buscaCursos.jpg" alt="">
                                 </a>
@@ -158,23 +168,26 @@
         </footer>
     </div>
 
+     <script>
+        const carrosseis = document.querySelectorAll('.curso .carrossel');
+        carrosseis.forEach(carrossel => {
+            let scrollPosition = 0;
+            const itemWidth = 200; 
+            const totalItems = carrossel.children.length;
 
-    <script>
-        const carrossel = document.querySelector('.curso .carrossel');
-        let scrollPosition = 0;
-        const itemWidth = 200; // largura da imagem
-        const totalItems = carrossel.children.length;
-
-        function deslizar() {
-            scrollPosition -= 1;
-            if (Math.abs(scrollPosition) >= itemWidth * totalItems) {
-                scrollPosition = 0;
+            function deslizar() {
+                scrollPosition -= 1;
+                if (Math.abs(scrollPosition) >= itemWidth * totalItems) {
+                    scrollPosition = 0;
+                }
+                carrossel.style.transform = `translateX(${scrollPosition}px)`;
             }
-            carrossel.style.transform = `translateX(${scrollPosition}px)`;
-        }
 
-        setInterval(deslizar, 20);
-    </script>
+            setInterval(deslizar, 40);
+        });
+
+    </script> 
+
 </body>
 
 </html>
