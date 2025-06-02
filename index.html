@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuscaCursos | Home</title>
     <link rel="stylesheet" href="css/styles.css">
-    <!-- <script src="../Js/script.js"></script> -->
+    <script src="Js/script.js" defer></script>
 </head>
 
 <body>
@@ -55,8 +55,10 @@
 
                 <div class="div-search">
 
-                    <form action=" " method="post">
-                        <input type="text" placeholder="    DIGITE SUA BUSCA" required>
+                    <form action=" " method="post" autocomplete="off">
+                        <input type="text" id="barraDeBusca" placeholder="    DIGITE SUA BUSCA" required>
+                        <div id="sugestoes" class="sugestoes-container"></div>
+
                         <!-- falta colocar a lupinha dentro do input - gaby -->
                     </form>
 
@@ -165,29 +167,9 @@
                 <li><a target="_blank" href="Pages/PolPrivacidade.html">Política de Privacidade</a></li>
                 <li><a target="_blank">Contato</a></li>
             </ul>
+
         </footer>
     </div>
-
-     <script>
-        const carrosseis = document.querySelectorAll('.curso .carrossel');
-        carrosseis.forEach(carrossel => {
-            let scrollPosition = 0;
-            const itemWidth = 200; 
-            const totalItems = carrossel.children.length;
-
-            function deslizar() {
-                scrollPosition -= 1;
-                if (Math.abs(scrollPosition) >= itemWidth * totalItems) {
-                    scrollPosition = 0;
-                }
-                carrossel.style.transform = `translateX(${scrollPosition}px)`;
-            }
-
-            setInterval(deslizar, 40);
-        });
-
-    </script> 
-
 </body>
 
 </html>
