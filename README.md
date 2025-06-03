@@ -31,5 +31,3 @@ Esse projeto está sob a licença MIT.
 - Gabrielly de Souza [@Gabidanety](https://github.com/Gabidanety)
 - Laura Valentim [@lauravalen](https://github.com/lauravalen)
 - Natália Doreto [@Dorettto](https://github.com/Dorettto)
-
-## Agradecimentos
