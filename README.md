@@ -27,9 +27,9 @@ A plataforma Busca Cursos é capaz de:
 Esse projeto está sob a licença MIT.
 
 ## Autoras
-- Bianca Mendes @Biancamsm
-- Gabrielly de Souza @Gabidanety
-- Laura Valentim @lauravalen
-- Natália Doreto @Dorettto
+- Bianca Mendes [@Biancamsm](https://github.com/Biancamsm)
+- Gabrielly de Souza [@Gabidanety](https://github.com/Gabidanety)
+- Laura Valentim [@lauravalen](https://github.com/lauravalen)
+- Natália Doreto [@Dorettto](https://github.com/Dorettto)
 
 ## Agradecimentos
