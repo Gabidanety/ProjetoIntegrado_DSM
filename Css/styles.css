@@ -244,7 +244,7 @@ CAMPO CATEGORIA E CURSOS */
     justify-content: center;
     background-color: var(--azul-escuro);
     margin-top: 0;
-    margin-bottom: 1%;
+    margin-bottom: 1%;    
 }
 
 /* Categorias */
@@ -252,10 +252,11 @@ CAMPO CATEGORIA E CURSOS */
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: var(--azul-escuro);
     gap: 15px;
+    padding: 1%;
 }
 
 .div-categoria ul{
@@ -292,7 +293,7 @@ CAMPO CATEGORIA E CURSOS */
 
 /*  Cursos */
 .div-acesso{
-    width: 60%;
+    width: 70%;
     height: 100%;
     background-color: transparent;
     gap: 20px;
