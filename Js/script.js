@@ -5,14 +5,14 @@
             const totalItems = carrossel.children.length;
 
             function deslizar() {
-                scrollPosition -= 1;
+                scrollPosition -= 1; // Velocidade do deslize
                 if (Math.abs(scrollPosition) >= itemWidth * totalItems) {
                     scrollPosition = 0;
                 }
                 carrossel.style.transform = `translateX(${scrollPosition}px)`;
             }
 
-            setInterval(deslizar, 40);
+            setInterval(deslizar, 30);
         });
 
         //barras de pesquisas
