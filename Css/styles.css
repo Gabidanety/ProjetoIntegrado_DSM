@@ -503,24 +503,75 @@ CAMPO CATEGORIA E CURSOS */
 
 /* FOOTER */
 footer{
-    width: 100%;
-    height: 10%;
     background-color: var(--branco-bege);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
+    padding: 70px 70px;
 }
 
+/* FOOTER CONTATOS E REDES */
+.footer-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "logo redes"
+        "termos termos";
+    gap: 30px;
+    align-items: start;
+    padding: 0 40px;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-logo img{
+    cursor: pointer;
+    height: 66px;
+    width: 300px;
+    filter: brightness(0.1) invert(9%) sepia(92%) saturate(1100%) hue-rotate(203deg) contrast(100%)
+}
+.footer-endereco {
+    font-size: 1.0em;
+    color: var(--azul-escuro);
+    line-height: 1.5em;
+}
+.footer-redes{
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+.footer-redes h2{
+    font-family: vietnam;
+    font-weight: bolder;
+    color: #00145A;
+    margin: 0 0 -5px;
+}
+.footer-redes img{
+    height: 4.0em;
+    cursor: pointer;
+}
+.footer-redes-icons {
+  display: flex;
+  gap: 5px;
+}
+
+
+/* LINKS FOOTER */
 footer ul{
     list-style: none;
     display: flex;
     gap: 25px;
+    padding: 0;
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
 }
 footer a{
     text-decoration: none;
     color: var(--azul-escuro);
-    font-size: 1.0rem;
+    font-size: 1.1rem;
 }
 footer a:hover{
     color: var(--cinza);
