@@ -181,8 +181,7 @@ nav a:hover{
     border-radius: 2.0rem;
     font-size: 1.0rem;
     background-color: var(--azul-normal);
-    color: var(--branco-bege); 
-    /* Remover o margin-left */
+    color: var(--branco-bege);
 }
 
 .div-search input[type="text"]::placeholder {
@@ -555,6 +554,14 @@ footer{
 .footer-redes-icons {
   display: flex;
   gap: 5px;
+}
+.footer-redes a:hover img{
+    color: var(--azul-normal);
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.footer-redes a:active img{
+    filter: brightness(0) saturate(100%) invert(37%) sepia(71%) saturate(573%) hue-rotate(179deg) brightness(95%) contrast(96%);
 }
 
 
