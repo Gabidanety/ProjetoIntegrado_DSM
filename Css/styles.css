@@ -561,7 +561,7 @@ footer{
     transition: transform 0.3s ease;
 }
 .footer-redes a:active img{
-    filter: brightness(0) saturate(100%) invert(37%) sepia(71%) saturate(573%) hue-rotate(179deg) brightness(95%) contrast(96%);
+    filter:saturate(100%) invert(37%) sepia(71%) saturate(573%) hue-rotate(179deg) brightness(95%) contrast(96%);
 }
 
 
