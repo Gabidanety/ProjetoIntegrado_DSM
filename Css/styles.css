@@ -597,3 +597,175 @@ footer a{
 footer a:hover{
     color: var(--cinza);
 }
+
+/* Área de pesquisa dos cursos: filtros */
+.div_filtros {
+    font-family: vietnam;
+    background-color:var(--azul-escuro);
+    color: var(--branco);
+    padding: 1.5rem;
+    max-width: 250px; 
+    width: 300px;   
+}
+
+.filtros-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+}
+
+.filtros-header h1{
+    font-family: bebas;
+    font-size: 2rem;
+    color: var(--branco);
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-limpar {
+    font-family: vietnam;
+    font-size: 1rem;
+    color: var(--azul-normal);
+    text-decoration: none;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.btn-limpar:hover {
+    background-color: rgba(37, 115, 217, 0.3);
+    color: var(--branco-bege)
+}
+
+.div_filtros input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    opacity: 0.4;
+}
+
+.div_filtros input[type="checkbox"]:checked {
+    opacity: 1;
+}
+
+.div_select {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.div_select h2 {
+    font-family: vietnam;
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-bottom: 0.3rem;
+}
+/* Área de pesquisa dos cursos*/
+.conteudo-principal {
+    display:flex;    
+    align-items: flex-start;
+}
+
+main { 
+    background-color: var(--branco-bege);
+    padding: 2px;    
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main h1 {
+    font-size: 2rem;
+    color: var(--azul-escuro);
+    padding-left: 30px;
+}
+
+.div-cursos { 
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    justify-content: center;
+}
+
+.card_curso { 
+    background-color: transparent;
+    border-radius: 8px;
+    width: 280px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.descricao {
+    font-family: vietnam;
+    font-size: 0.9rem;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    padding-left: 1rem;
+    margin-top: 0.6rem;
+}
+
+.card_curso h3 {
+    text-align: center;
+    color: var(--azul-escuro);
+    font-family: bebas;
+    font-size: 1.3rem;
+    margin: 0.2rem 0;
+
+    
+}
+
+.info-curso {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    padding: 0.2rem;
+}
+
+.botoes {
+    font-size: 0.95rem;
+    font-family: bebas;
+}
+
+.avaliacao {
+    color:var(--azul-escuro);
+    cursor: pointer;    
+    font-size: 0.8rem;
+}
+
+.image_curso {
+    width: 100%;
+    height: 180px;
+    background-color: var(--azul-normal);
+    border-radius: 6px;  
+}
+
+.div-pag {
+    font-family: vietnam;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2rem;
+    color: var(--azul-escuro)
+
+}
+
+.pag {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--azul-escuro);
+    border-radius: 5px;
+    padding: 3px;
+}
+.pag:hover {
+    
+    color: var(--branco);
+    background-color: var(--azul-escuro);
+    border: 1px solid var(--azul-escuro);  
+}
+
+
