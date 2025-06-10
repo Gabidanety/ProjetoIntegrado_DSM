@@ -667,14 +667,14 @@ footer a:hover{
     align-items: flex-start;
 }
 
-main { 
+.div-todos-cursos { 
     background-color: var(--branco-bege);
     padding: 2px;    
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-main h1 {
+.div-todos-cursos  h1 {
     font-size: 2rem;
     color: var(--azul-escuro);
     padding-left: 30px;
