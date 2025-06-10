@@ -196,15 +196,25 @@ nav a:hover{
     flex-direction: column;
     border-left: 6px solid var(--branco-bege);
     margin-left: 12%; 
-
-
+    margin-bottom: 60px;
 }
+
 .div-texto p{
     color: var(--branco-bege);
     padding-left: 1%;
     padding-right: 20%;
-    line-height: 1.5;
-    
+    line-height: 1.5;   
+}
+
+.div-texto h2{
+    color: var(--branco-bege);
+    padding-left: 1%;
+    padding-right: 20%; 
+    margin-bottom: -10px;
+}
+.div-texto a{
+    color: var(--branco-bege);
+    padding-right: 20%; 
 }
 
 .sugestoes-container {
