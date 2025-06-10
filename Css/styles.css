@@ -429,7 +429,7 @@ CAMPO CATEGORIA E CURSOS */
 /* Formulário Apoie o projeto */
 .div-esquerda{
     width: 40%;
-    height: 450px;
+    height: 550px;
     text-align: left;
     margin-top: -1%;
     background-color: var(--branco-bege);
@@ -455,6 +455,7 @@ CAMPO CATEGORIA E CURSOS */
     text-align: left;
     margin-top: -1%;
     background-color: var(--azul-escuro);
+    
 }
 .div-direita h1{
     font-size: 4.0rem;
@@ -472,6 +473,7 @@ CAMPO CATEGORIA E CURSOS */
     height: 100%;
     padding-left: 10%;
     margin-top: -10px;
+    flex-direction: column;
 }
 .formulario label{
     font-family: vietnam;
@@ -479,6 +481,7 @@ CAMPO CATEGORIA E CURSOS */
     font-size: 16px;
     padding-right: 3px;
     margin-bottom: 8px;
+    
 }
 .entrada{
     width: 300px;
@@ -505,6 +508,7 @@ CAMPO CATEGORIA E CURSOS */
     height: 50px;
     width: 90px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 15px;
 }
 .botao:hover{
     background-color: var(--azul-escuro);

@@ -23,10 +23,17 @@
         // Lista de sugestões - depois ira vir do banco de dados
         const sugestoes = [
             'Programação',
+            'Java',
+            'Python',
+            'Lógica de Programação',
+            'Algoritmos',
+            'Big Data',
             'Banco de dados',
             'Gestão e negócios',
             'Línguas estrangeiras',
-            'Design e ilustração',
+            'Inglês',
+            'Design',
+            'Ilustração',
             'Inteligência artificial',
             'Saúde',
             'Marketing'
