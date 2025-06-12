@@ -4,9 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const feedbackApoioDiv = document.getElementById('feedback-apoio');
 
     if (formApoio && feedbackApoioDiv) {
-        console.log("Formulário de Apoio encontrado:", formApoio);
-        console.log("Div de Feedback de Apoio encontrada:", feedbackApoioDiv);
-
         formApoio.addEventListener('submit', function(event) {
             event.preventDefault();
 
@@ -25,11 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            console.log('Dados do formulário de apoio enviados:');
-            console.log('Nome:', nome);
-            console.log('Email:', email);
-            console.log('Link:', link);
-
             feedbackApoioDiv.textContent = 'Agradecemos por apoiar nosso projeto! Sua sugestão foi enviada com sucesso!';
             feedbackApoioDiv.classList.add('mensagem-sucesso');
             feedbackApoioDiv.classList.remove('mensagem-oculta');
@@ -37,12 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
             formApoio.reset();
         });
     } else {
-        console.warn("Formulário de Apoio ou div de feedback não encontrados. Verifique os IDs no HTML.");
         if (!formApoio) {
-            console.warn("Elemento com ID 'formApoio' não encontrado.");
         }
         if (!feedbackApoioDiv) {
-            console.warn("Elemento com ID 'feedback-apoio' não encontrado.");
         }
     }
 
@@ -51,8 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const feedbackLoginDiv = document.getElementById('feedback-login');
 
     if (formLogin && feedbackLoginDiv) {
-        console.log("Formulário de Login encontrado:", formLogin);
-        console.log("Div de Feedback de Login encontrada:", feedbackLoginDiv);
 
         formLogin.addEventListener('submit', function(event) {
             event.preventDefault();
@@ -80,12 +67,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     } else {
-        console.warn("Formulário de Login ou div de feedback não encontrados. Verifique os IDs no HTML (se esta página tiver login).");
         if (!formLogin) {
-            console.warn("Elemento com ID 'formLogin' não encontrado.");
         }
         if (!feedbackLoginDiv) {
-            console.warn("Elemento com ID 'feedback-login' não encontrado.");
         }
     }
 
