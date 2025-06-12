@@ -61,7 +61,7 @@
             <div class="div_filtros">
                 <div class="filtros-header">
                     <h1>FILTROS</h1>
-                    <a href="#" class="btn-limpar">limpar</a>
+                    <a href="#" class="btn-limpar" id="btnLimpar">limpar</a>
                 </div>
 
                 <div class="div_select">
@@ -179,7 +179,10 @@
                 <main>
                     <h1>todos os cursos</h1>
                     <div class="div-cursos">
-                        <div class="card_curso">
+                        <p>Nenhum curso encontrado</p>
+                    </div>
+                    <div class="div-cursos">
+                        <div class="card_curso" data-categoria="dados">
                             <div class="image_curso">
                                 <img src="../assets/images/img-curso-SI.png"
                                     alt="imagem do curso sistemas da informação">
@@ -199,7 +202,7 @@
 
                         </div>
 
-                        <div class="card_curso">
+                        <div class="card_curso" data-categoria="programacao">
 
                             <div class="image_curso">
 <img src="../assets/images/img-curso-py1.png"
@@ -217,7 +220,7 @@
                             </div>
                         </div>
 
-                        <div class="card_curso">
+                        <div class="card_curso" data-categoria="programacao">
                             <div class="image_curso">
                                 <img src="../assets/images/img-curso-py2.png"
                                     alt="imagem do curso fundamentos de Python 2">
@@ -236,7 +239,7 @@
                             </div>
                         </div>
 
-                        <div class="card_curso">
+                        <div class="card_curso" data-categoria="programacao">
                             <div class="image_curso">
                                 <img src="../assets/images/img-curso-TI.png"
                                     alt="imagem do curso IT Essentials 7">
@@ -254,7 +257,7 @@
                             </div>
                         </div>
 
-                        <div class="card_curso">
+                        <div class="card_curso" data-categoria="programacao">
 
                             <div class="image_curso">
                                 <img src="../assets/images/img-curso-CD.png"
@@ -272,7 +275,7 @@
                             </div>
                         </div>
 
-                        <div class="card_curso">
+                        <div class="card_curso" data-categoria="IA">
 
                             <div class="image_curso">
                                 <img src="../assets/images/img-curso-IA.png"
@@ -358,6 +361,11 @@
             </ul>
         </footer>
     </div>
+
+    <!-- SCRIPTS -->
+    <script src="../Js/script.js"></script>
+   
+
 </body>
 
 </html>

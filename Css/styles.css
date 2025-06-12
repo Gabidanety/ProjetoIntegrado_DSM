@@ -672,6 +672,9 @@ footer a:hover{
     padding: 2px;    
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+     min-height: 800px; 
+     min-width: 1200px; 
+    transition: all 0.3s ease;
 }
 
 .div-todos-cursos  h1 {
@@ -685,6 +688,8 @@ footer a:hover{
     flex-wrap: wrap;
     gap:2rem;
     justify-content: center;
+    /* min-height: 400px;  */
+
 }
 
 .card_curso { 

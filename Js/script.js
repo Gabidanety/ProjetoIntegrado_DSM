@@ -71,4 +71,63 @@
             }
         });
 
+//FILTROS DA PAGINA pagescurso
+
+function aplicarFiltros() {
+    const categoriasSelecionadas = Array.from(document.querySelectorAll('input[name="categoria"]:checked')).map(cb => cb.value);
+    const avaliacoesSelecionadas = Array.from(document.querySelectorAll('input[name="avaliacao"]:checked')).map(cb => {
+        const mapa = { um: 1, dois: 2, tres: 3, quatro: 4, cinco: 5 };
+        return mapa[cb.value];
+    });
+
+    const cards = document.querySelectorAll(".card_curso");
+    let algumCursoVisivel = false;
+
+    cards.forEach(card => {
+        const categoria = card.getAttribute("data-categoria");
+        const notaTexto = card.querySelector(".avaliacao")?.textContent;
+        let nota = 0;
+
+        if (notaTexto) {
+            const match = notaTexto.match(/\(([\d,]+)\)/);
+            if (match) {
+                nota = parseFloat(match[1].replace(",", "."));
+            }
+        }
+
+        const passaCategoria = categoriasSelecionadas.length === 0 || categoriasSelecionadas.includes(categoria);
+        const passaAvaliacao = avaliacoesSelecionadas.length === 0 || avaliacoesSelecionadas.some(av => nota >= av);
+
+        if (passaCategoria && passaAvaliacao) {
+            card.style.display = "block";
+            algumCursoVisivel = true;
+        } else {
+            card.style.display = "none";
+        }
+    });
+
+    // Mostrar ou esconder a mensagem de "Nenhum curso encontrado"
+    const mensagemNenhumCurso = document.querySelector(".div-cursos > p");
+    if (mensagemNenhumCurso) {
+        mensagemNenhumCurso.style.display = algumCursoVisivel ? "none" : "block";
+    }
+}
+
+// mudar os checkboxes
+document.querySelectorAll('input[name="categoria"], input[name="avaliacao"]').forEach(input => {
+    input.addEventListener("change", aplicarFiltros);
+});
+
+//  botão LIMPAR filtros
+document.querySelector('.btn-limpar').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    // Desmarca os checkboxes
+    document.querySelectorAll('input[name="categoria"], input[name="avaliacao"]').forEach(input => {
+        input.checked = false;
+    });
+
+    aplicarFiltros(); // Atualiza os cards
+});
+window.addEventListener('DOMContentLoaded', aplicarFiltros);
 
