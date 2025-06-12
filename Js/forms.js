@@ -28,11 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             formApoio.reset();
         });
-    } else {
-        if (!formApoio) {
-        }
-        if (!feedbackApoioDiv) {
-        }
     }
 
     //FORMS LOGIN
@@ -66,11 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 feedbackLoginDiv.classList.remove('mensagem-oculta');
             }
         });
-    } else {
-        if (!formLogin) {
-        }
-        if (!feedbackLoginDiv) {
-        }
     }
 
 });
