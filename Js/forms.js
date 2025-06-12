@@ -45,4 +45,48 @@ document.addEventListener('DOMContentLoaded', function() {
             console.warn("Elemento com ID 'feedback-apoio' não encontrado.");
         }
     }
+
+    //FORMS LOGIN
+    const formLogin = document.getElementById('formLogin');
+    const feedbackLoginDiv = document.getElementById('feedback-login');
+
+    if (formLogin && feedbackLoginDiv) {
+        console.log("Formulário de Login encontrado:", formLogin);
+        console.log("Div de Feedback de Login encontrada:", feedbackLoginDiv);
+
+        formLogin.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const usuario = document.getElementById('usuarioLogin').value.trim();
+            const senha = document.getElementById('senhaLogin').value.trim();
+
+            feedbackLoginDiv.textContent = '';
+            feedbackLoginDiv.classList.add('mensagem-oculta');
+            feedbackLoginDiv.classList.remove('mensagem-sucesso', 'mensagem-erro');
+
+            if (usuario === '' || senha === '') {
+                feedbackLoginDiv.textContent = 'Por favor, preencha usuário e senha.';
+                feedbackLoginDiv.classList.add('mensagem-erro');
+                feedbackLoginDiv.classList.remove('mensagem-oculta');
+                return;
+            }
+
+            if (usuario === 'buscacursos' && senha === '123abc') {
+                window.location.href = '../index.html';
+            } else {
+                feedbackLoginDiv.textContent = 'Usuário ou senha incorretos.';
+                feedbackLoginDiv.classList.add('mensagem-erro');
+                feedbackLoginDiv.classList.remove('mensagem-oculta');
+            }
+        });
+    } else {
+        console.warn("Formulário de Login ou div de feedback não encontrados. Verifique os IDs no HTML (se esta página tiver login).");
+        if (!formLogin) {
+            console.warn("Elemento com ID 'formLogin' não encontrado.");
+        }
+        if (!feedbackLoginDiv) {
+            console.warn("Elemento com ID 'feedback-login' não encontrado.");
+        }
+    }
+
 });
