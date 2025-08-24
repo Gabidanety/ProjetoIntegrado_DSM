@@ -463,6 +463,7 @@ CAMPO CATEGORIA E CURSOS */
     font-weight: bold;
     padding-left: 5%;
     margin-top: 15px;
+    margin-bottom: -10px;
 }
 .main-formulario{
     display: flex;
@@ -780,3 +781,110 @@ footer a:hover{
 }
 
 
+/* FORM APOIE O PROJETO */
+.mensagem-oculta {
+    display: none;
+}
+
+#feedback-apoio { 
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 80%;
+    margin-left: 5%;
+    font-family: vietnam;
+}
+
+.mensagem-sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.mensagem-erro {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* LOGIN */
+.login{
+    font-family: vietnam;
+    color: var(--branco);
+}
+.div-tituloLogin h1{
+    width: 100%;
+    text-align: center;
+    color: var(--branco-bege);
+    font-size: 4.0rem;
+    margin: 0;
+    padding: 0;
+}
+.formulario-login label{
+    font-family: vietnam;
+    color: var(--branco-bege);
+    font-size: 16px;
+    /* padding-right: 3px; */
+    margin-bottom: -15px;
+    width: 100%;
+    text-align: left;
+    display: block;
+}
+.formulario-login {
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.entrada-login {
+    width: 100%;
+    height: 25px;
+    background-color: var(--branco-bege);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-family: vietnam;
+}
+.botao-login {
+    font-family: vietnam;
+    color: var(--branco-bege);
+    font-size: 16px;
+    background-color: var(--azul-normal);
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.botao-login:hover {
+    background-color: var(--azul-escuro);
+}
+
+.mensagem-oculta {
+    display: none;
+}
+
+#feedback-login { 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 30%;
+    font-family: vietnam;
+}
+
+.mensagem-erro {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
