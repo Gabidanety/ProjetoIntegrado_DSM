@@ -67,13 +67,20 @@ header{
     display: flex;
     flex-wrap: wrap;
 }
-
+.mobile-botao {
+    display: none;
+    font-size: 2rem;
+    color: var(--branco-bege);
+    cursor: pointer;
+    margin-right: 25px;
+}
 /* NAV */
 nav{
     display: flex;
     flex-wrap: wrap;
     width: 70%;
     align-items: center;
+
 }
 nav ul{
     list-style: none;
