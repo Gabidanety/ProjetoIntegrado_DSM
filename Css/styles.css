@@ -141,7 +141,7 @@ nav a:hover{
     justify-content: center;
     
 }
-
+/**/
 .div-tituloBranco{
     display: flex;
     height: 30%;
@@ -150,6 +150,7 @@ nav a:hover{
     background-color: transparent;
 
 }
+/**/
 .div-tituloBranco h1{
     color: var(--branco-bege);
     font-size: 4.0rem;
