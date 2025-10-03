@@ -1,5 +1,5 @@
 /* AQUI A O STYLES DA TELA RPINCIPAL, HEADER E FOOTER */
-
+/*teste branch*/
 @font-face {
     font-family: bebas;
     src: url(../fonts/BebasNeue-Regular.otf);
@@ -67,13 +67,20 @@ header{
     display: flex;
     flex-wrap: wrap;
 }
-
+.mobile-botao {
+    display: none;
+    font-size: 2rem;
+    color: var(--branco-bege);
+    cursor: pointer;
+    margin-right: 25px;
+}
 /* NAV */
 nav{
     display: flex;
     flex-wrap: wrap;
     width: 70%;
     align-items: center;
+
 }
 nav ul{
     list-style: none;
@@ -134,7 +141,7 @@ nav a:hover{
     justify-content: center;
     
 }
-
+/**/
 .div-tituloBranco{
     display: flex;
     height: 30%;
@@ -143,6 +150,7 @@ nav a:hover{
     background-color: transparent;
 
 }
+/**/
 .div-tituloBranco h1{
     color: var(--branco-bege);
     font-size: 4.0rem;

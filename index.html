@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuscaCursos | Home</title>
     <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="Css/mobileStyles.css">
     <script src="Js/script.js" defer></script>
+
 </head>
 
 <body>
@@ -21,15 +23,25 @@
                 </a>
             </div>
 
+            <!-- Botão menu para o mobile -->
+            <div class="mobile-botao" onclick="document.querySelector('header nav').classList.toggle('ativo')">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+            </div>
+
             <nav>
                 <ul>
-                    <li><a href="Pages/quemSomos.html" target="_blank">
+                    <li><a href="Pages/quemSomos.html">
                             <h2>QUEM SOMOS</h2>
                         </a></li>
-                    <li><a href="Pages/faq.html" target="_blank">
+                    <li><a href="Pages/faq.html" >
                             <h2>F.A.Q</h2>
                         </a></li>
-                    <li><a href="Pages/apoieProjeto.html" target="_blank">
+                    <li><a href="Pages/apoieProjeto.html" >
                             <h2>APOIE O PROJETO</h2>
                         </a></li>
                 </ul>
@@ -60,7 +72,6 @@
                         <input type="text" id="barraDeBusca" placeholder="    DIGITE SUA BUSCA" required>
                         <div id="sugestoes" class="sugestoes-container"></div>
 
-                        <!-- falta colocar a lupinha dentro do input - gaby -->
                     </form>
 
                 </div>
@@ -169,8 +180,8 @@
                         <img src="assets/images/logo_Busca.png" alt="Logo BuscaCursos">
                     </a>
                     <p class="footer-endereco">
-                    Av. Aguia de Haia, 2.983 - Cidade A. E. Carvalho<br>
-                    São Paulo/SP - CEP: 03694-000
+                        Av. Aguia de Haia, 2.983 - Cidade A. E. Carvalho<br>
+                        São Paulo/SP - CEP: 03694-000
                     </p>
                 </div>
 
@@ -192,7 +203,7 @@
 
                         <a href="https://www.linkedin.com/school/fateczl-oficial/posts/?feedView=all" target="_blank">
                             <img src="assets/images/contatos_linkedin.png" alt="LinkedIn">
-                        </a>    
+                        </a>
 
                         <a href="https://www.tiktok.com/@fateczl.oficial" target="_blank">
                             <img src="assets/images/contatos_tiktok.png" alt="TikTok">
