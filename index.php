@@ -35,18 +35,18 @@
 
             <nav>
                 <ul>
-                    <li><a href="Pages/quemSomos.html">
+                    <li><a href="Pages/quemSomos.php">
                             <h2>QUEM SOMOS</h2>
                         </a></li>
-                    <li><a href="Pages/faq.html" >
+                    <li><a href="Pages/faq.php" >
                             <h2>F.A.Q</h2>
                         </a></li>
-                    <li><a href="Pages/apoieProjeto.html" >
+                    <li><a href="Pages/apoieProjeto.php" >
                             <h2>APOIE O PROJETO</h2>
                         </a></li>
                 </ul>
                 <div class="div-login">
-                    <a href="/Pages/login.html">
+                    <a href="Pages/login.php">
                         <h3>LOG IN</h3>
                     </a>
                 </div>

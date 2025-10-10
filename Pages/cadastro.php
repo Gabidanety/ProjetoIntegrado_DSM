@@ -38,29 +38,44 @@
                         </a></li>
                 </ul>
             </nav>
-           
+
+             
+            
         </header>
 
     <main>
         <section class="login">
             <div class="div-tituloLogin">
-                <h1>Entrar na sua conta</h1>
+                <h1>Cadastre</h1>
             </div>
 
              <div id="feedback-login" class="mensagem-oculta"></div>
 
             <form id="formLogin" class="formulario-login">
+                
+                <label for="usuarioLogin">Nome::</label>
+                <br>
+                <input type="text" id="userName" class="entrada-login" name="username" autocomplete="userName">
+                <br> 
+
                 <label for="usuarioLogin">Email:</label>
                 <br>
-                <input type="text" id="userEmail" class="entrada-login" autocomplete="userEmail">
+                <input type="email" id="userEmail" class="entrada-login" name="userEmail" autocomplete="userEmail">
                 <br> 
+
                 <label for="senhaLogin">Senha:</label>
                 <br>
-                <input type="password" id="senhaLogin" class="entrada-login" autocomplete="current-password"><br> 
+                <input type="password" id="senhaLogin" class="entrada-login" name="userSenha" autocomplete="current-password"><br> 
+                
+                
+                <label for="senhaLogin">Confirma 0Senha:</label>
+                <br>
+                <input type="password" id="senhaLogin" class="entrada-login" name="userSenhaConfirm" autocomplete="current-password"><br> 
                 
                 <button type="submit" class="botao-login">Entrar</button>
-                
-                <a href="cadastro.php"><p>Não tem conta? Cadastre aqui!</p></a>
+                <a href="login.php"><p>voltar</p></a>
+
+
             </form>
 
         </section>
@@ -117,5 +132,49 @@
 
     <script src="../Js/forms.js"></script>
     
+    <!-- "Inserção no banco PHP" -->
+
+        <? 
+
+            // problema na conexão
+
+
+            include('conexao.php');
+   
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    $usuario = $_POST['username'];
+                    $email = $_POST['userEmail'];
+                    $senha = $_POST['userSenha'];
+                    $senhaConfirm = $_POST['userSenhaConfirm'];
+
+                    date_default_timezone_set('America/Sao_Paulo'); 
+                    $dataHoraAtual = date('Y-m-d H:i:s'); 
+
+                    // Previne SQL Injection
+                    // $usuario = mysqli_real_escape_string($conn, $usuario);
+                    // $email = mysqli_real_escape_string($conn, $email);
+                    // $senha = mysqli_real_escape_string($conn, $senha);
+
+                    $check = "SELECT * FROM usuario WHERE USU_STR_EMAIL = '$email'";
+                    $result = $conn->query($check);
+
+                    if ($result->num_rows != 0) {
+                        echo "<script>alert('Usuário já existe!');</script>";
+                    } else {
+
+                            $sql = "INSERT INTO USUARIO (USU_STR_NOME, USU_STR_EMAIL, USU_STR_SENHA, USU_STR_INSERCAO, USU_INT_SITUACAO)
+                                VALUES ('$usuario', '$email', '$senha','$dataHoraAtual',0)";
+
+                        if ($conn->query($sql) === TRUE) {
+                            // echo "<script>alert('Cadastro realizado com sucesso!'); window.location='login.php';</script>";
+                        } else {
+                            echo "Erro ao cadastrar: " . $conn->error;
+                        }
+                    }
+                }
+            
+            
+            
+            ?>
 </body>
 </html>
