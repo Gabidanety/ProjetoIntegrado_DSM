@@ -259,6 +259,58 @@ CREATE TABLE TESTE_VOCACIONAL (
         REFERENCES CATEGORIA (CAT_INT_ID)
 );
 
+-- Triggers
+
+-- registra açoes que ocorre na tabela curso
+CREATE TABLE LOG_CURSO (
+    LOG_INT_ID INT NOT NULL AUTO_INCREMENT,
+    CUR_INT_ID INT NOT NULL,
+    LOG_STR_ACAO VARCHAR(20) NOT NULL, 
+    LOG_STR_INFO JSON,
+    LOG_STR_DATA DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT PK_LOG_CURSO_ID PRIMARY KEY (LOG_INT_ID)
+);
+
+CREATE TRIGGER TRG_CURSO_INSERT
+AFTER INSERT ON CURSO
+FOR EACH ROW
+BEGIN
+    INSERT INTO LOG_CURSO (CUR_INT_ID, LOG_STR_ACAO, LOG_STR_INFO)
+    VALUES (
+        NEW.CUR_INT_ID,
+        'INSERT',
+        JSON_OBJECT(
+            'titulo', NEW.CUR_STR_TITULO,
+            'descricao', NEW.CUR_STR_DESC,
+            'url', NEW.CUR_STR_URL
+        )
+    );
+END;
+
+CREATE TRIGGER TRG_CURSO_UPDATE
+AFTER UPDATE ON CURSO
+FOR EACH ROW
+BEGIN
+    INSERT INTO LOG_CURSO (CUR_INT_ID, LOG_STR_ACAO, LOG_STR_INFO)
+    VALUES (
+        NEW.CUR_INT_ID,
+        'UPDATE',
+        JSON_OBJECT(
+            'antes', JSON_OBJECT(
+                'titulo', OLD.CUR_STR_TITULO,
+                'descricao', OLD.CUR_STR_DESC,
+                'url', OLD.CUR_STR_URL
+            ),
+            'depois', JSON_OBJECT(
+                'titulo', NEW.CUR_STR_TITULO,
+                'descricao', NEW.CUR_STR_DESC,
+                'url', NEW.CUR_STR_URL
+            )
+        )
+    );
+END;
+
+
 
 ---
 -- Comandos INSERT com ajuste no formato de data (YYYY-MM-DD HH:MM:SS)
