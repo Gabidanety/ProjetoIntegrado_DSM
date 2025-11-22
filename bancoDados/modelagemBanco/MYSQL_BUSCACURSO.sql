@@ -310,6 +310,60 @@ BEGIN
     );
 END;
 
+--views
+CREATE OR REPLACE VIEW vw_recomendacao_por_teste AS
+SELECT 
+    tv.USU_INT_ID,
+    tv.CAT_INT_ID AS categoria_resultado_id,
+    cat.CAT_STR_DESC AS categoria_resultado,
+    
+    ac.ACA_INT_ID AS area_categoria_id,
+    ac.ACA_INT_SITUACAO AS area_situacao,
+    
+    c.CUR_INT_ID AS curso_id,
+    c.CUR_STR_TITULO AS curso_titulo,
+    c.CUR_STR_DESC AS curso_descricao,
+    c.CUR_STR_URL AS curso_url,
+    c.CUR_STR_CERTIFICACAO AS curso_certificacao,
+    c.CUR_FLO_QUANTHORA AS curso_horas,
+    c.CUR_STR_NIVELENSINO AS curso_nivel,
+    c.CUR_STR_DATAINICIO AS curso_data_inicio,
+    
+    pc.PLA_INT_ID AS plataforma_id,
+    p.PLA_STR_NOME AS plataforma_nome,
+    p.PLA_STR_URL AS plataforma_url
+
+FROM TESTE_VOCACIONAL tv
+JOIN CATEGORIA cat 
+    ON cat.CAT_INT_ID = tv.CAT_INT_ID
+
+JOIN AREACATEGORIA ac
+    ON ac.CAT_INT_ID = cat.CAT_INT_ID
+    AND ac.ACA_INT_SITUACAO = 1   
+
+JOIN CURSO c
+    ON c.ACA_INT_ID = ac.ACA_INT_ID
+
+LEFT JOIN PLATAFORMACURSO pc
+    ON pc.CUR_INT_ID = c.CUR_INT_ID
+    AND pc.PLC_INT_SITUACAO = 1   
+
+LEFT JOIN PLATAFORMA p
+    ON p.PLA_INT_ID = pc.PLA_INT_ID;
+
+--
+CREATE VIEW vw_media_avaliacao_curso AS
+SELECT 
+    c.CUR_INT_ID,
+    c.CUR_STR_TITULO,
+    AVG(co.COM_INT_AVALIACAO) AS media,
+    COUNT(co.COM_INT_ID) AS totalAvaliacoes
+FROM CURSO c
+LEFT JOIN COMENTARIO co ON co.CUR_INT_ID = c.CUR_INT_ID AND co.COM_INT_SITUACAO = 1
+GROUP BY c.CUR_INT_ID;
+
+
+
 
 
 ---
