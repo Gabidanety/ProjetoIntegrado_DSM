@@ -334,7 +334,7 @@ BEGIN
     );
 END;
 
---views
+-- //  -- views -- // --
 CREATE OR REPLACE VIEW vw_recomendacao_por_teste AS
 SELECT 
     tv.USU_INT_ID,
@@ -386,6 +386,20 @@ FROM CURSO c
 LEFT JOIN COMENTARIO co ON co.CUR_INT_ID = c.CUR_INT_ID AND co.COM_INT_SITUACAO = 1
 GROUP BY c.CUR_INT_ID;
 
+CREATE OR REPLACE VIEW vw_qtd_cursos_plataforma AS
+SELECT 
+    p.PLA_INT_ID,
+    p.PLA_STR_NOME,
+    p.PLA_STR_URL,
+    COUNT(pc.CUR_INT_ID) AS total_cursos
+FROM PLATAFORMA p
+LEFT JOIN PLATAFORMACURSO pc 
+    ON pc.PLA_INT_ID = p.PLA_INT_ID 
+    AND pc.PLC_INT_SITUACAO = 1
+GROUP BY 
+    p.PLA_INT_ID,
+    p.PLA_STR_NOME,
+    p.PLA_STR_URL;
 
 
 
